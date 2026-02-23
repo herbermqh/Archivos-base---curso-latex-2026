@@ -1,0 +1,112 @@
+\documentclass[10pt]{book}
+\usepackage{showframe}
+\usepackage{lipsum}
+\usepackage{multicol}
+
+
+\begin{document}
+\tableofcontents
+
+
+
+
+\chapter{FORMATO DE TEXTO}
+\lipsum[1]
+
+
+\begin{center}
+
+Texto centreado.
+
+\end{center}
+
+{
+\centering
+
+Texto centreado (segunda forma)
+
+}
+
+\begin{flushleft}
+Texto justificado
+\end{flushleft}
+{%
+\raggedright Version en comando
+
+}
+
+
+\begin{flushright}
+Texto justificado
+\end{flushright}
+{%
+\raggedleft Version en comando
+
+}
+
+
+
+
+
+$a_{5 + 1} + b^{22 + a + b}$
+
+% Hola mundo
+
+\begingroup
+
+
+\large
+\bfseries\itshape
+\lipsum[1]
+
+\endgroup
+
+
+
+Hola, Heber                 MQ\\
+Hola mundo \par Nuevo párrafo.
+
+
+Hola, Heber \hspace{2cm} MQ
+
+\vspace{2cm}
+
+Hola mundo \par Nuevo párrafo.
+
+\marginpar{Texto en margen}
+
+Tenemos los siguientes animales:
+\begin{enumerate}
+	\item Vaca.
+	\item Mariposa.
+	\item Foca.
+	\begin{enumerate}
+		\item Foca gris.
+		\item Foca negro.
+	\end{enumerate}
+\end{enumerate}
+
+Tenemos los siguientes animales:
+\begin{itemize}
+	\item Vaca.
+	\item Mariposa.
+	\item Foca.
+	\begin{itemize}
+		\item Foca gris.
+		\item Foca negro.
+	\end{itemize}
+\end{itemize}
+
+
+\begin{multicols}{2}
+
+\lipsum[1-3]
+
+\end{multicols}
+
+
+\end{document}
+
+
+ 
+
