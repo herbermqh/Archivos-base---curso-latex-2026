@@ -1,0 +1,121 @@
+\documentclass{book}
+\usepackage{xcolor}
+
+
+\begin{document}
+Hola mundo
+
+
+\newcommand\f[2][\frac{a}{b}]{$(#1 + #2)$}
+
+%\newenvironment{}[][]{}{}
+
+\newenvironment{textocolor}[2][red]{
+	\color{#1}
+	#2
+	\bfseries
+}{
+	Fin del entorno
+}
+
+\begin{textocolor}[magenta]{rrr}
+
+Heber MQ
+
+\end{textocolor}
+
+Fuera del entorno
+
+
+
+%\hola
+%\hola{arg}
+%\hola{}{}
+%\hola{}{}{}
+%
+%\hola[]{}
+%\hola[]{}{}
+%\hola[]{}{}{}
+%
+%\begin{hola}
+%
+%\end{hola}
+%\begin{hola}{}
+%
+%\end{hola}
+%\begin{hola}{}{}
+%
+%\end{hola}
+%\begin{hola}{}{}{}
+%
+%\end{hola}
+%\begin{hola}[]{}
+%
+%\end{hola}
+%\begin{hola}[]{}{}
+%
+%\end{hola}
+%\begin{hola}[]{}{}{}
+%
+%\end{hola}
+
+----------------------------
+
+
+\newcounter{micontador}
+
+\setcounter{micontador}{100}
+
+\themicontador
+
+
+\addtocounter{micontador}{-10}
+
+
+\themicontador
+
+
+\setcounter{page}{0}
+
+
+\newpage
+
+Hola mundo
+
+
+\newpage
+
+Hola mundo
+
+\makeatletter
+\renewcommand{\theenumi}{%
+	\bfseries
+	\color{magenta}
+	\@arabic\c@enumi
+}
+\makeatother
+
+Tenemos los siguientes animales:
+\begin{enumerate}
+	\item Vaca.
+	\item Mariposa.
+	\item Foca.
+	\begin{enumerate}
+		\item Foca gris.
+		\item Foca negro.
+	\end{enumerate}
+\end{enumerate}
+
+
+-------------------------------------------
+\newlength{\milong}
+\setlength{\milong}{100pt}
+\addtolength{\milong}{-10pt}
+
+\the\milong
+
+
+
+
+
+\end{document}
